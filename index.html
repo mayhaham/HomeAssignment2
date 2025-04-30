@@ -6,8 +6,51 @@
   <title>My Portfolio</title>
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project-calculator.html">Project Calculator</a></li>
+      </ul>
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="assets/imgs/avatar.png" alt="My Avatar" class="hero-img" />
+      <h2>Hello, I'm</h2>
+      <h1>May Haham</h1>
+      <h3>Fullstack Developer</h3>
+      <a href="assets/resume.pdf" class="btn" target="_blank" rel="noopener">View Resume</a>
+    </section>
+
+    <section class="info-section">
+      <div class="contact">
+        <h3>Contact Info</h3>
+        <p>📞 <a href="tel:+972501234567">+972-50-327-1998</a></p>
+        <p>✉️ <a href="mailto:you@example.com">mayhaham@gmail.com</a></p>
+        <p>💼 <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn Profile</a></p>
+      </div>
+      <div class="projects">
+        <h3>Featured Projects</h3>
+        <div class="project-item">
+          <a href="https://mayhaham.github.io/HW-Ramen/ramen.html" target="_blank">
+            <img src="assets/imgs/ramen-preview.jpg" alt="Ramen Project" />
+            <h4>Ramen Project</h4>
+          </a>
+          <p>A website about Ramen types, history and recipes – built with HTML and CSS only.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer>
+    <p>© 2025 May Haham. All rights reserved.</p>
+  </footer>
 </body>
 </html>
