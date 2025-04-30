@@ -4,10 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Experience And Skills</title>
+  <link rel="stylesheet" href="assets/style/global.css" />
+  <link rel="stylesheet" href="assets/style/skills.css" />
 </head>
+
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header class="shared-bar sticky-header">
+    <nav class="navbar">
+      <div class="logo">May's Portfolio</div>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="project-calculator.html">Project Calculator</a></li>
+      </ul>
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+  
+  <main class="skills-wrapper">
+    <section class="skills-card">
+      <h2>My Technical & Professional Skills</h2>
+      <ul>
+        <li><strong>Front-End Development:</strong> HTML, Responsive Design, Flexbox & Grid</li>
+        <li><strong>Programming Languages:</strong> JavaScript for beginners, C#</li>
+        <li><strong>Tools & Version Control:</strong> Git & GitHub</li>
+        <li><strong>Soft Skills:</strong> Communication, Creative thinking, Team leadership, Time management</li>
+        <li><strong>Languages:</strong> Hebrew (Native), English (Fluent), Spanish (basic)</li>
+      </ul>
+      <p class="resume-link">
+        <a href="assets/resume.pdf" target="_blank" rel="noopener">View Resume →</a>
+      </p>
+    </section>
+
+    <section class="skills-gallery">
+      <img src="assets/imgs/skills-laptop.jpg" alt="Coding on a laptop" />
+      <img src="assets/imgs/teamwork.jpg" alt="Teamwork session" />
+    </section>
+  </main>
+  
+  <footer class="shared-bar">
+    <p>© 2025 May Haham. All rights reserved.</p>
+  </footer>
+
+  <script src="services/global.js"></script>
+  
 </body>
 </html>

@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me</title>
+  <link rel="stylesheet" href="assets/style/global.css" />
+  <link rel="stylesheet" href="assets/style/about.css" />
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+
+  <header class="shared-bar sticky-header">
+    <nav class="navbar">
+      <div class="logo">May's Portfolio</div>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project-calculator.html">Project Calculator</a></li>
+      </ul>
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main class="about-wrapper">
+    <section class="about-card">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm May Haham, a Bachelor's student in Business Administration with a specialization in Information Systems at Ruppin Academic Center (expected graduation: 2027).
+        I have a strong passion for integrating business and technology to create smart, innovative solutions tailored to organizational needs.
+      </p>
+      <p>
+        I'm highly motivated, detail-oriented, and thrive both independently and in multidisciplinary teams.
+        I bring with me a systemic perspective, analytical thinking, and excellent communication skills in both Hebrew and English.
+      </p>
+      <p>
+        Beyond the academic and professional world, I’m deeply curious and love exploring – I enjoy traveling the world,
+        learning new things, and inventing creative ideas that bring value and inspiration. I recently returned from a 4-month journey across South America – and the photo below is from Brazil 🌎🇧🇷.
+      </p>
+      <img src="assets/imgs/south-america.jpg" alt="Me and my friends in Brazil" class="about-img">
+    </section>
+  </main>
+
+  <footer class="shared-bar">
+    <p>© 2025 May Haham. All rights reserved.</p>
+  </footer>
+
+  <script src="services/global.js"></script>
 </body>
 </html>
