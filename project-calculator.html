@@ -4,10 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Project Quote Calculator</title>
+  <link rel="stylesheet" href="assets/style/global.css" />
+  <link rel="stylesheet" href="assets/style/calcualtor.css" />
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  
+  <header class="shared-bar sticky-header">
+    <nav class="navbar">
+      <div class="logo">May's Portfolio</div>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">☰</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="project-calculator.html" class="active">Project Calculator</a></li>
+      </ul>
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main class="calculator-wrapper">
+    <section class="calculator-card">
+      <h2>Project Quote Calculator 💻</h2>
+      <p class="desc">Get a quick estimate for your custom site based on type, number of pages and special design.</p>
+      <form id="quote-form">
+        <label for="site-type">Site Type:</label>
+        <select id="site-type" required>
+          <option value="">-- Select --</option>
+          <option value="business">Business Site</option>
+          <option value="store">Online Store</option>
+          <option value="blog">Blog</option>
+        </select>
+        <label for="num-pages">Number of Pages (1–10):</label>
+        <input type="number" id="num-pages" min="1" max="10" value="1" required />
+        <div class="custom-design">
+          <input type="checkbox" id="custom-design" />
+          <label for="custom-design">🎨 Custom Design</label>
+        </div>
+        <div class="buttons">
+          <button type="submit">Calculate Price</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+      <div id="result" class="result-box"></div>
+    </section>
+  </main>
+
+  <footer class="shared-bar">
+    <p>© 2025 May Haham. All rights reserved.</p>
+  </footer>
+  <script src="services/global.js"></script>
+  <script src="services/calculator.js"></script>
 </body>
 </html>
