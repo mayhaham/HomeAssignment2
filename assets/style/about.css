@@ -22,13 +22,15 @@
 
 .about-section {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .about-text {
   flex: 1 1 55%;
+  min-width: 260px;
 }
 
 .about-text h2 {
@@ -44,6 +46,8 @@
 .about-img {
   flex: 1 1 40%;
   max-width: 300px;
+  min-width: 200px;
+  width: 100%;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 12px var(--shadow);
@@ -61,10 +65,15 @@ body.dark-mode .about-text p {
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .about-img {
-    max-width: 100%;
+    max-width: 90%;
+  }
+
+  .about-text {
+    text-align: center;
   }
 }
