@@ -19,11 +19,6 @@
     box-shadow: 0 4px 12px var(--shadow);
   }
   
-  .skills-card h2 {
-    margin-bottom: 16px;
-    color: var(--main-color);
-  }
-  
   .skills-card ul {
     padding-left: 20px;
     line-height: 1.6;

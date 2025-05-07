@@ -37,9 +37,6 @@
     margin: 8px 0;
   }
   
-  .hero-text h2 {
-    color: var(--subheading-color);
-  }
   .hero-text h3 {
     color: var(--subsubheading-color);
   }

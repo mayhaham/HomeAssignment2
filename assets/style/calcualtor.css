@@ -19,12 +19,6 @@
     width: 100%;
     transition: background-color 0.3s;
   }
-
-  .calculator-card h2 {
-    text-align: center;
-    color: var(--main-color);
-    margin-bottom: 12px;
-  }
   
   .calculator-card .desc {
     text-align: center;

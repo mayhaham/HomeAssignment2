@@ -173,3 +173,13 @@ body.dark-mode .btn:hover {
 body.dark-mode .resume-link a {
   color: var(--dark-text);
 }
+
+h2 {
+  color: var(--subheading-color);
+  margin-bottom: 16px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
