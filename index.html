@@ -8,67 +8,70 @@
     <link rel="stylesheet" href="assets/style/home.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   </head>
-<body>
 
-  <header class="shared-bar sticky-header">
-    <nav class="navbar">
-      <div class="logo">May's Portfolio</div>
-      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <ul id="nav-links" class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="project-calculator.html">Project Calculator</a></li>
-      </ul>
-      <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
-    </nav>
-  </header>
+  <body>
+    <header class="shared-bar sticky-header">
+      <nav class="navbar">
+        <div class="logo">May's Portfolio</div>
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="project-calculator.html">Project Calculator</a></li>
+        </ul>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon moon-icon"></i>
+        </button>        
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero-row">
-      <div class="hero-img-wrapper">
-        <img src="assets/imgs/avatar.jpg" alt="Selfie of myself" class="hero-img" />
-      </div>
-      <div class="hero-text">
-        <h2>Hello, I'm</h2>
-        <h1>May Haham</h1>
-        <h3>Information Systems Student & Aspiring Web Developer</h3>
-        <p>
-          Passionate about turning ideas into functional and aesthetic web experiences.  
-          Currently mastering HTML, CSS and responsive design while building creative, user-friendly websites.
-          Always eager to learn, grow, and bring value through technology.
-        </p><br>
-        <a href="assets/resume.pdf" class="btn" target="_blank" rel="noopener">View Resume</a>
+    <main>
+      <section class="hero-row">
+        <div class="hero-img-wrapper">
+          <img src="assets/imgs/avatar.jpg" alt="Selfie of myself" class="hero-img" />
         </div>
-    </section>
-
-    <section class="info-section">
-      <div class="contact">
-        <h3>Contact Info</h3>
-        <p><i class="fas fa-phone"></i> <a href="tel:+972503271998">+972-50-327-1998</a></p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:mayhaham@gmail.com">mayhaham@gmail.com</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/may-haham-528b24362" target="_blank" rel="noopener">LinkedIn</a></p>
-        <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/mayhaham1?igsh=aHY5ZXFoZmw5b3du&utm_source=qr" target="_blank" rel="noopener">Instagram</a></p>
-        <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/share/15o52ERzLw/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></p>
-      </div>      
-    
-      <div class="projects">
-        <h3>Featured Projects</h3>
-        <div class="project-item">
-          <a href="https://mayhaham.github.io/HW-Ramen/ramen.html" target="_blank">
-            <img src="assets/imgs/ramen-feature.png" alt="Ramen Project" />
-            <h4>Ramen Project</h4>
-          </a>
-          <p>A website about Ramen types, history, and recipes – built with HTML and CSS only.</p>
+        <div class="hero-text">
+          <h2>Hello, I'm</h2>
+          <h1>May Haham</h1>
+          <h3>Information Systems Student & Aspiring Web Developer</h3>
+          <p>
+            Passionate about turning ideas into functional and aesthetic web experiences.
+            Currently mastering HTML, CSS and responsive design while building creative,
+            user-friendly websites. Always eager to learn, grow, and bring value through technology.
+          </p>
+          <br>
+          <a href="assets/resume.pdf" class="btn" target="_blank" rel="noopener">View Resume</a>
         </div>
-      </div>
-    </section>
-    
+      </section>
 
-  <footer class="shared-bar">
-    <p>© 2025 May Haham. All rights reserved.</p>
-  </footer>
-  
-  <script src="services/global.js"></script>
-</body>
+      <section class="info-section">
+        <div class="contact">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-phone"></i> <a href="tel:+972503271998">+972-50-327-1998</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:mayhaham@gmail.com">mayhaham@gmail.com</a></p>
+          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/may-haham-528b24362" target="_blank" rel="noopener">LinkedIn</a></p>
+          <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/mayhaham1?igsh=aHY5ZXFoZmw5b3du&utm_source=qr" target="_blank" rel="noopener">Instagram</a></p>
+          <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com/share/15o52ERzLw/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></p>
+        </div>
+
+        <div class="projects">
+          <h3>Featured Projects</h3>
+          <div class="project-item">
+            <a href="https://mayhaham.github.io/HW-Ramen/ramen.html" target="_blank">
+              <img src="assets/imgs/ramen-feature.png" alt="Ramen Project" />
+              <h4>Ramen Project</h4>
+            </a>
+            <p>A website about Ramen types, history, and recipes – built with HTML and CSS only.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shared-bar">
+      <p>© 2025 May Haham. All rights reserved.</p>
+    </footer>
+
+    <script src="services/global.js"></script>
+  </body>
 </html>

@@ -19,6 +19,13 @@ if (hamburger && navLinks && darkToggle) {
 
   darkToggle.addEventListener('click', () => {
     const isDark = body.classList.toggle('dark-mode');
-    darkToggle.innerHTML = isDark ? '☀️' : '🌙';
+    const icon = darkToggle.querySelector('i');
+
+    if (icon) {
+      icon.classList.toggle('fa-moon', !isDark);
+      icon.classList.toggle('fa-sun', isDark);
+      icon.classList.toggle('moon-icon', !isDark);
+      icon.classList.toggle('sun-icon', isDark);
+    }
   });
 }
