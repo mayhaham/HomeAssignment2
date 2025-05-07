@@ -51,10 +51,8 @@
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 12px var(--shadow);
-  max-width: 100%;
-  width: 100%;
-  
 }
+
 
 body.dark-mode .about-card {
   background-color: var(--dark-card-bg);
@@ -71,7 +69,7 @@ body.dark-mode .about-text p {
     align-items: center;
     text-align: center;
   }
-  
+
   .about-text {
     text-align: center;
     width: 100%;
