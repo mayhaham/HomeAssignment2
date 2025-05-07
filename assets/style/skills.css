@@ -57,5 +57,31 @@
       gap: 24px;
     }
   }
+
+  .skills-img {
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px var(--shadow);
+  }
+  
+  @media (min-width: 768px) {
+    .skills-card {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+  
+    .skills-card ul {
+      flex: 1;
+    }
+  
+    .skills-img {
+      flex: 1;
+      max-width: 300px;
+    }
+  }
+  
   
   

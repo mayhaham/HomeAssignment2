@@ -1,44 +1,70 @@
 @import url('./variables.css');
 
 .about-wrapper {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 16px;
-    display: flex;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-card {
+  background-color: var(--card-bg);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.about-text {
+  flex: 1 1 55%;
+}
+
+.about-text h2 {
+  margin-bottom: 8px;
+  color: var(--main-color);
+}
+
+.about-text p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.about-img {
+  flex: 1 1 40%;
+  max-width: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+body.dark-mode .about-card {
+  background-color: var(--dark-card-bg);
+}
+
+body.dark-mode .about-text h2,
+body.dark-mode .about-text p {
+  color: var(--dark-text);
+}
+
+@media (max-width: 768px) {
+  .about-section {
     flex-direction: column;
+    text-align: center;
   }
-  
-  .about-card {
-    background-color: var(--card-bg);
-    padding: 32px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px var(--shadow);
-    transition: background-color 0.3s;
-  }
-  
-  .about-card p {
-    margin-bottom: 16px;
-    color: var(--text-color);
-    line-height: 1.6;
-  }
-  
+
   .about-img {
-    display: block;
-    margin: 20px auto 0;
-    width: 50%;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px var(--shadow);
+    max-width: 100%;
   }
-
-  body.dark-mode .about-card {
-    background-color: var(--dark-card-bg);
-  }
-  
-  body.dark-mode .about-card p,
-  body.dark-mode .about-card h2 {
-    color: var(--dark-text);
-  }
-
-  
-  
+}
