@@ -1,13 +1,18 @@
 .hero-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 48px 32px;
-    flex-wrap: wrap;
-    max-width: 960px;
-    margin: 0 auto;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 48px 32px;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex-grow: 1;
+  max-width: 500px;
+}
   
   .hero-img-wrapper {
     flex-shrink: 0;
@@ -44,6 +49,7 @@
     font-weight: normal;
     margin-bottom: 16px;
     font-size: 18px;
+
   }
   
   .btn {
@@ -55,6 +61,8 @@
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s;
+    margin-top: 20px;
+
   }
   
   .btn:hover {
