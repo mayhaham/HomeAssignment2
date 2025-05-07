@@ -1,4 +1,4 @@
-@import url('variables.css');
+@import url('./variables.css');
 
 .hero-row {
   display: flex;
@@ -51,7 +51,6 @@
     text-decoration: none;
     transition: 0.3s;
     margin-top: 20px;
-
   }
   
   .btn:hover {
