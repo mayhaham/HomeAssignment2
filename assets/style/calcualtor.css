@@ -19,6 +19,11 @@
     width: 100%;
     transition: background-color 0.3s;
   }
+
+  form {
+    font-size: 16px;
+    margin-top: 24px;
+  }
   
   .calculator-card .desc {
     text-align: center;
@@ -115,5 +120,15 @@
   body.dark-mode form label,
   body.dark-mode .custom-design label {
     color: var(--dark-text);
+  }
+  
+  @media (max-width: 600px) {
+    .calculator-card {
+      padding: 20px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
   }
   
