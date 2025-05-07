@@ -1,3 +1,18 @@
 :root {
   --primary-color: #ffffff;
+  --main-color: #2c3e50;
+  --main-color-dark: #1a242f;
+  --text-color: #1c1c1c;
+  --light-bg: #f7f9fb;
+  --card-bg: #ffffff;
+  --footer-bg: #2c3e50;
+  --footer-text: #ffffff;
+  --dark-bg: #1e2b38;
+  --dark-card-bg: #223243;
+  --dark-text: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.05);
+  --moon-color: #a5bfd1;
+  --sun-color: #f1c40f;
+  --subheading-color: #444;
+  --subsubheading-color: #555;
 }

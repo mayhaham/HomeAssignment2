@@ -1,3 +1,5 @@
+@import url('variables.css');
+
 .hero-row {
   display: flex;
   align-items: center;
@@ -29,10 +31,6 @@
     border: 4px solid var(--main-color);
   }
   
-  .hero-text {
-    flex-grow: 1;
-  }
-  
   .hero-text h1 {
     font-size: 36px;
     color: var(--main-color);
@@ -40,16 +38,10 @@
   }
   
   .hero-text h2 {
-    color: #444;
-    font-size: 20px;
+    color: var(--subheading-color);
   }
-  
   .hero-text h3 {
-    color: #555;
-    font-weight: normal;
-    margin-bottom: 16px;
-    font-size: 18px;
-
+    color: var(--subsubheading-color);
   }
   
   .btn {
@@ -70,6 +62,11 @@
     color: #ffffff;
   }
   
+  body.dark-mode .btn:hover {
+    background-color: var(--main-color);
+    color: white;
+  }
+
   .info-section {
     display: flex;
     flex-wrap: wrap;
@@ -133,5 +130,7 @@
     font-size: 18px;
     color: var(--main-color);
   }
+  
+
   
   

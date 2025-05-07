@@ -1,3 +1,5 @@
+@import url('variables.css');
+
 .about-wrapper {
     max-width: 900px;
     margin: 40px auto;
@@ -37,4 +39,9 @@
   body.dark-mode .about-card h2 {
     color: var(--dark-text);
   }
+
+  .about-card h2 {
+    color: var(--main-color);
+  }
+  
   
