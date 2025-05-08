@@ -35,10 +35,12 @@ body {
 }
 
 .logo {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: bold;
   color: var(--footer-text);
+  white-space: nowrap;
 }
+
 
 .nav-links {
   list-style: none;
