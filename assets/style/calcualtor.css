@@ -6,7 +6,7 @@
   padding: 0 16px;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 0;
   justify-content: center;
   align-items: flex-start;
 }
@@ -19,12 +19,7 @@
   box-shadow: 0 4px 12px var(--shadow);
   flex: 1 1 450px;
   transition: background-color 0.3s;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 24px;
-  color: var(--subheading-color);
+  margin: 0 10px 32px;
 }
 
 form label {
