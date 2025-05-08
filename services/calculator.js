@@ -24,12 +24,12 @@ document.getElementById('quote-form').addEventListener('submit', function (e) {
   const resultBox = document.getElementById('result');
   resultBox.innerHTML = `
     <ul class="summary-list">
-      <li>🖥️ Site Type: ${type.charAt(0).toUpperCase() + type.slice(1)}</li>
-      <li>📄 Number of Pages: ${pages}</li>
-      <li>🎨 Custom Design: ${custom ? 'Yes' : 'No'}</li>
-      <li>💰 Total Price: <span class="price">₪${total.toLocaleString()}</span></li>
+      <li>Site Type: ${type.charAt(0).toUpperCase() + type.slice(1)}</li>
+      <li>Number of Pages: ${pages}</li>
+      <li>Custom Design: ${custom ? 'Yes' : 'No'}</li>
+      <li>Total Price: <span class="price">₪${total.toLocaleString()}</span></li>
     </ul>
-    <p class="thank-you">Thank you for using our quote calculator! ✅</p>
+    <p class="thank-you">Thank you for using our quote calculator!</p>
   `;
 });
 
