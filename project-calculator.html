@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="assets/style/calcualtor.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
-  
   <header class="shared-bar sticky-header">
     <nav class="navbar">
       <div class="logo">May's Portfolio</div>
@@ -22,40 +22,49 @@
       </ul>
       <button id="dark-mode-toggle" aria-label="Toggle dark mode">
         <i class="fas fa-moon moon-icon"></i>
-      </button>      
+      </button>
     </nav>
   </header>
 
   <main class="calculator-wrapper">
     <section class="calculator-card">
       <h2>Project Quote Calculator 💻</h2>
-      <p class="desc">Get a quick estimate for your custom site based on type, number of pages and special design.</p>
+      <p>Quickly estimate your website's cost based on its type, number of pages, and whether it includes a custom design.</p>
       <form id="quote-form">
         <label for="site-type">Site Type:</label>
         <select id="site-type" required>
           <option value="">-- Select --</option>
-          <option value="business">Business Site</option>
+          <option value="business">Business</option>
           <option value="store">Online Store</option>
           <option value="blog">Blog</option>
         </select>
+
         <label for="num-pages">Number of Pages (1–10):</label>
         <input type="number" id="num-pages" min="1" max="10" value="1" required />
-        <div class="custom-design">
+        <div class="checkbox-container">
           <input type="checkbox" id="custom-design" />
-          <label for="custom-design">🎨 Custom Design</label>
+          
+          <label for="custom-design">Custom Design 🎨</label>
         </div>
         <div class="buttons">
           <button type="submit">Calculate Price</button>
           <button type="reset">Reset</button>
         </div>
       </form>
-      <div id="result" class="result-box"></div>
+    </section>
+
+    <section class="result-card">
+      <h2>Project Summary 🧾</h2>
+      <div id="result" class="result-box">
+        <p>Fill out the form to get a detailed quote.</p>
+      </div>
     </section>
   </main>
 
   <footer class="shared-bar">
     <p>© 2025 May Haham. All rights reserved.</p>
   </footer>
+
   <script src="services/global.js"></script>
   <script src="services/calculator.js"></script>
 </body>
