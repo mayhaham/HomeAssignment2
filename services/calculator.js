@@ -40,7 +40,6 @@ function calculatePrice() {
   var total = basePrice + extraPages + customPrice;
 
   var resultBox = document.getElementById("result");
-  // מחליף את המחלקה hidden ב־"" (כלומר מסיר אותה)
   resultBox.className = "result-box";
 
   resultBox.innerHTML =

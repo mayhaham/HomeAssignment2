@@ -1,31 +1,23 @@
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-const darkToggle = document.getElementById('dark-mode-toggle');
-const body = document.body;
+var hamburger = document.getElementById("hamburger");
+var navLinks = document.getElementById("nav-links");
 
-if (hamburger && navLinks && darkToggle) {
-  hamburger.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const isOpen = navLinks.classList.toggle('nav-open');
-    hamburger.setAttribute('aria-expanded', isOpen);
-  });
+hamburger.onclick = function () {
+  if (navLinks.className === "nav-links") {
+    navLinks.className = "nav-links nav-open";
+  } else {
+    navLinks.className = "nav-links";
+  }
+};
 
-  document.addEventListener('click', (e) => {
-    if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
-      navLinks.classList.remove('nav-open');
-      hamburger.setAttribute('aria-expanded', 'false');
-    }
-  });
+var darkToggle = document.getElementById("dark-mode-toggle");
+var body = document.body;
 
-  darkToggle.addEventListener('click', () => {
-    const isDark = body.classList.toggle('dark-mode');
-    const icon = darkToggle.querySelector('i');
-
-    if (icon) {
-      icon.classList.toggle('fa-moon', !isDark);
-      icon.classList.toggle('fa-sun', isDark);
-      icon.classList.toggle('moon-icon', !isDark);
-      icon.classList.toggle('sun-icon', isDark);
-    }
-  });
-}
+darkToggle.onclick = function () {
+  if (body.className === "dark-mode") {
+    body.className = "";
+    darkToggle.innerHTML = '<i class="fas fa-moon moon-icon"></i>';
+  } else {
+    body.className = "dark-mode";
+    darkToggle.innerHTML = '<i class="fas fa-sun sun-icon"></i>';
+  }
+};
