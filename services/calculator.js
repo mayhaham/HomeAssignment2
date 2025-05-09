@@ -1,10 +1,7 @@
-document.getElementById('quote-form').onsubmit = calculatePrice;
-document.getElementById('quote-form').onreset = resetForm;
-
 function calculatePrice() {
-  var type = document.getElementById('site-type').value;
-  var pages = parseInt(document.getElementById('num-pages').value);
-  var custom = document.getElementById('custom-design').checked;
+  var type = document.getElementById("site-type").value;
+  var pages = parseInt(document.getElementById("num-pages").value);
+  var custom = document.getElementById("custom-design").checked;
 
   if (type === "" || isNaN(pages) || pages < 1 || pages > 10) {
     alert("Please fill out all fields correctly.");
@@ -34,6 +31,7 @@ function calculatePrice() {
 
   var customPrice = 0;
   var customText = "No";
+
   if (custom) {
     customPrice = 1000;
     customText = "Yes";
@@ -42,7 +40,8 @@ function calculatePrice() {
   var total = basePrice + extraPages + customPrice;
 
   var resultBox = document.getElementById("result");
-  resultBox.style.display = "block";
+  // מחליף את המחלקה hidden ב־"" (כלומר מסיר אותה)
+  resultBox.className = "result-box";
 
   resultBox.innerHTML =
     "<ul class='summary-list'>" +
@@ -58,6 +57,9 @@ function calculatePrice() {
 
 function resetForm() {
   var resultBox = document.getElementById("result");
-  resultBox.style.display = "none";
+  resultBox.className = "result-box hidden";
   resultBox.innerHTML = "<p>Fill out the form to get a detailed quote.</p>";
 }
+
+document.getElementById("quote-form").onsubmit = calculatePrice;
+document.getElementById("quote-form").onreset = resetForm;

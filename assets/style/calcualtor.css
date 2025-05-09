@@ -111,6 +111,11 @@ body.dark-mode .thank-you {
   color: var(--dark-text);
 }
 
+.hidden {
+    display: none;
+  }
+  
+
 @media (max-width: 768px) {
   .calculator-wrapper {
     flex-direction: column;
