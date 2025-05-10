@@ -41,16 +41,16 @@ form input[type="number"] {
 }
 
 .checkbox-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 16px;
-    color: var(--text-color);
-  }
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--text-color);
+}
 
-  .checkbox-container input[type="checkbox"] {
-    transform: translateY(8px);
-  }
+.checkbox-container input[type="checkbox"] {
+  transform: translateY(8px);
+}
 
 .buttons {
   margin-top: 24px;
@@ -112,13 +112,45 @@ body.dark-mode .thank-you {
 }
 
 .hidden {
-    display: none;
-  }
-  
+  display: none;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .calculator-wrapper {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .checkbox-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .calculator-card,
+  .result-card {
+    margin: 0 0 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .calculator-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .buttons {
     flex-direction: column;
   }
 
+  .calculator-card,
+  .result-card {
+    margin: 0 10px 32px;
+  }
 }

@@ -27,19 +27,9 @@
   color: var(--text-color);
 }
 
-body.dark-mode .resume-link a {
-  color: var(--dark-text);
-}
-
-.skills-gallery {
-  flex: 1 1 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.skills-gallery img {
+.skills-img {
   width: 100%;
+  margin-top: 16px;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 4px 12px var(--shadow);
@@ -54,15 +44,7 @@ body.dark-mode .skills-card h2 {
   color: var(--dark-text);
 }
 
-.skills-img {
-  width: 100%;
-  margin-top: 16px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px var(--shadow);
-}
-
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .skills-wrapper {
     flex-direction: column;
     gap: 24px;
