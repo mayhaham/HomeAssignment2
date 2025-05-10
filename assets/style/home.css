@@ -146,3 +146,15 @@ body.dark-mode .contact i {
     gap: 24px;
   }
 }
+
+@media (min-width: 768px) {
+  .hero-row {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .info-section {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
