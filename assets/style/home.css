@@ -130,6 +130,23 @@
   body.dark-mode .contact i {
     color: var(--dark-text);
   }
+
+  @media (max-width: 768px) {
+    .hero-row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-img-wrapper {
+      justify-content: center;
+    }
+  
+    .info-section {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+  
   
 
   
