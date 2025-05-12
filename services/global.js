@@ -1,8 +1,8 @@
-var hamburger = document.getElementById("hamburger");
-var navLinks = document.getElementById("nav-links");
-var darkToggle = document.getElementById("dark-mode-toggle");
-var body = document.body;
-var icon = darkToggle.querySelector("i");
+let hamburger = document.getElementById("hamburger");
+let navLinks = document.getElementById("nav-links");
+let darkToggle = document.getElementById("dark-mode-toggle");
+let body = document.body;
+let icon = darkToggle.querySelector("i");
 
 hamburger.onclick = function () {
   if (navLinks.style.display === "flex") {

@@ -86,22 +86,6 @@ form input[type="number"] {
   color: var(--main-color);
 }
 
-body.dark-mode .calculator-card,
-body.dark-mode .result-card {
-  background-color: var(--dark-card-bg);
-}
-
-body.dark-mode h2,
-body.dark-mode form label,
-body.dark-mode .checkbox-container,
-body.dark-mode .result-box,
-body.dark-mode .result-box ul,
-body.dark-mode .result-box li,
-body.dark-mode .price,
-body.dark-mode .thank-you {
-  color: var(--dark-text);
-}
-
 .hidden {
   display: none;
 }

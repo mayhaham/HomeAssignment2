@@ -1,15 +1,15 @@
 function calculatePrice() {
-  var type = document.getElementById("site-type").value;
-  var pages = parseInt(document.getElementById("num-pages").value);
-  var custom = document.getElementById("custom-design").checked;
+  let type = document.getElementById("site-type").value;
+  let pages = parseInt(document.getElementById("num-pages").value);
+  let custom = document.getElementById("custom-design").checked;
 
   if (type === "" || isNaN(pages) || pages < 1 || pages > 10) {
     alert("Please fill out all fields correctly.");
     return false;
   }
 
-  var basePrice = 0;
-  var displayType = "";
+  let basePrice = 0;
+  let displayType = "";
 
   if (type === "business") {
     basePrice = 1000;
@@ -24,22 +24,22 @@ function calculatePrice() {
     displayType = "Blog";
   }
 
-  var extraPages = 0;
+  let extraPages = 0;
   if (pages > 1) {
     extraPages = (pages - 1) * 200;
   }
 
-  var customPrice = 0;
-  var customText = "No";
+  let customPrice = 0;
+  let customText = "No";
 
   if (custom) {
     customPrice = 1000;
     customText = "Yes";
   }
 
-  var total = basePrice + extraPages + customPrice;
+  let total = basePrice + extraPages + customPrice;
 
-  var resultBox = document.getElementById("result");
+  let resultBox = document.getElementById("result");
   resultBox.className = "result-box";
 
   resultBox.innerHTML =
@@ -55,7 +55,7 @@ function calculatePrice() {
 }
 
 function resetForm() {
-  var resultBox = document.getElementById("result");
+  let resultBox = document.getElementById("result");
   resultBox.className = "result-box hidden";
   resultBox.innerHTML = "<p>Fill out the form to get a detailed quote.</p>";
 }

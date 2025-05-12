@@ -35,15 +35,6 @@
   box-shadow: 0 4px 12px var(--shadow);
 }
 
-body.dark-mode .skills-card {
-  background-color: var(--dark-card-bg);
-}
-
-body.dark-mode .skills-card ul,
-body.dark-mode .skills-card h2 {
-  color: var(--dark-text);
-}
-
 @media (max-width: 767px) {
   .skills-wrapper {
     flex-direction: column;
