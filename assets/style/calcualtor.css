@@ -90,7 +90,7 @@ form input[type="number"] {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .calculator-wrapper {
     flex-direction: column;
   }
@@ -113,7 +113,7 @@ form input[type="number"] {
   }
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .calculator-wrapper {
     flex-direction: row;
     gap: 0;
