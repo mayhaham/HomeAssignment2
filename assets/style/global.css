@@ -136,6 +136,8 @@ body.dark-mode h3,
 body.dark-mode p,
 body.dark-mode a {
   color: var(--dark-text);
+  background-color: var(--main-color);
+  color: white;
 }
 
 body.dark-mode .nav-links a:hover,
@@ -175,15 +177,18 @@ body.dark-mode .resume-link a {
     top: 100%;
     left: 0;
     right: 0;
+    width: 100%;
     background-color: var(--main-color);
     display: none;
     z-index: 999;
-    padding: 16px 0;
+    box-sizing: border-box;
+    padding: 16px 24px;
   }
 
   .nav-links.nav-open {
     display: flex;
     gap: 16px;
+    padding-bottom: 32px;
   }
 
   .nav-links li {
