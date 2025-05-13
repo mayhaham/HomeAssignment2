@@ -1,7 +1,7 @@
 function calculatePrice() {
-  let type = document.getElementById("site-type").value;
-  let pages = parseInt(document.getElementById("num-pages").value);
-  let custom = document.getElementById("custom-design").checked;
+  const type = document.getElementById("site-type").value;
+  const pages = parseInt(document.getElementById("num-pages").value);
+  const custom = document.getElementById("custom-design").checked;
 
   if (type === "" || isNaN(pages) || pages < 1 || pages > 10) {
     alert("Please fill out all fields correctly.");
@@ -14,14 +14,15 @@ function calculatePrice() {
   if (type === "business") {
     basePrice = 1000;
     displayType = "Business";
-  }
-  if (type === "store") {
+  } else if (type === "store") {
     basePrice = 2000;
     displayType = "Online Store";
-  }
-  if (type === "blog") {
+  } else if (type === "blog") {
     basePrice = 1500;
     displayType = "Blog";
+  } else {
+    alert("Invalid site type.");
+    return false;
   }
 
   let extraPages = 0;
@@ -37,11 +38,10 @@ function calculatePrice() {
     customText = "Yes";
   }
 
-  let total = basePrice + extraPages + customPrice;
+  const total = basePrice + extraPages + customPrice;
+  const resultBox = document.getElementById("result");
 
-  let resultBox = document.getElementById("result");
   resultBox.className = "result-box";
-
   resultBox.innerHTML =
     "<ul class='summary-list'>" +
     "<li>Site Type: " + displayType + "</li>" +
@@ -55,7 +55,7 @@ function calculatePrice() {
 }
 
 function resetForm() {
-  let resultBox = document.getElementById("result");
+  const resultBox = document.getElementById("result");
   resultBox.className = "result-box hidden";
   resultBox.innerHTML = "<p>Fill out the form to get a detailed quote.</p>";
 }

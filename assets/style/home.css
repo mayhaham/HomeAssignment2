@@ -117,6 +117,23 @@
   color: var(--main-color);
 }
 
+body.dark-mode .contact,
+body.dark-mode .projects {
+  background-color: var(--dark-card-bg);
+  color: var(--dark-text);
+}
+
+body.dark-mode .contact h3,
+body.dark-mode .projects h3,
+body.dark-mode .contact a,
+body.dark-mode .projects a {
+  color: var(--dark-text);
+}
+
+body.dark-mode .contact i {
+  color: var(--dark-text);
+}
+
 @media only screen and (max-width: 767px) {
   .hero-row {
     flex-direction: column;

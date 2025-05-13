@@ -38,6 +38,15 @@
   max-width: 300px;
 }
 
+body.dark-mode .about-card {
+  background-color: var(--dark-card-bg);
+}
+
+body.dark-mode .about-text h2,
+body.dark-mode .about-text p {
+  color: var(--dark-text);
+}
+
 @media only screen and (max-width: 767px) {
   .about-section {
     display: flex;

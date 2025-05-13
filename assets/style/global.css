@@ -1,3 +1,4 @@
+
 @import url('./variables.css');
 
 body {
@@ -51,15 +52,16 @@ body {
   color: var(--footer-text);
   text-decoration: none;
   font-weight: 500;
-  padding: 6px 12px;
-  border-radius: 6px;
-  transition: 0.3s ease;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
 }
 
 .nav-links a:hover,
-.nav-links .active {
+.nav-links a.active {
   background-color: var(--main-color-dark);
   color: white;
+  font-weight: bold;
 }
 
 .hamburger {
@@ -111,9 +113,9 @@ body {
   color: var(--main-color-dark);
 }
 
-h2 {
+h1, h2, h3 {
   text-align: center;
-  font-size: 24px;
+  font-weight: bold;
   margin-bottom: 24px;
   color: var(--subheading-color);
 }
@@ -128,22 +130,26 @@ body.dark-mode .navbar {
   background-color: var(--main-color-dark);
 }
 
-body.dark-mode .nav-links a,
 body.dark-mode .logo,
+body.dark-mode .nav-links a {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
+  background-color: var(--main-color);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode p,
 body.dark-mode a {
-  color: var(--dark-text);
-  background-color: var(--main-color);
-  color: white;
-}
-
-body.dark-mode .nav-links a:hover,
-body.dark-mode .nav-links .active {
-  background-color: var(--main-color);
-  color: white;
+  color: var(--primary-color);
+  background-color: transparent;
 }
 
 body.dark-mode .btn {
@@ -197,14 +203,13 @@ body.dark-mode .resume-link a {
   }
 
   .nav-links a {
-    display: inline-block;
     width: 100%;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .nav-links {
-    display: flex !important;
+    display: flex;
     position: static;
     flex-direction: row;
     align-items: center;

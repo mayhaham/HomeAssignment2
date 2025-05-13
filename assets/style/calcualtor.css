@@ -90,6 +90,19 @@ form input[type="number"] {
   display: none;
 }
 
+body.dark-mode .calculator-card,
+body.dark-mode .result-card {
+  background-color: var(--dark-card-bg);
+  color: var(--dark-text);
+}
+
+body.dark-mode form label,
+body.dark-mode .checkbox-container,
+body.dark-mode .result-box ul,
+body.dark-mode .result-box .thank-you {
+  color: var(--dark-text);
+}
+
 @media only screen and (max-width: 767px) {
   .calculator-wrapper {
     flex-direction: column;

@@ -1,23 +1,20 @@
-let hamburger = document.getElementById("hamburger");
-let navLinks = document.getElementById("nav-links");
-let darkToggle = document.getElementById("dark-mode-toggle");
-let body = document.body;
-let icon = darkToggle.querySelector("i");
+function toggleMenu() {
+  const navLinks = document.getElementById("nav-links");
+  navLinks.classList.toggle("nav-open");
+}
 
-hamburger.onclick = function () {
-  if (navLinks.style.display === "flex") {
-    navLinks.style.display = "none";
-  } else {
-    navLinks.style.display = "flex";
-  }
-};
+function toggleDarkMode() {
+  const body = document.body;
+  const darkModeToggle = document.getElementById("dark-mode-toggle");
 
-darkToggle.onclick = function () {
-  if (body.className === "dark-mode") {
-    body.className = "";
-    icon.className = "fas fa-moon moon-icon";
+  if (body.classList.contains("dark-mode")) {
+    body.classList.remove("dark-mode");
+    darkModeToggle.innerHTML = "🌙";
   } else {
-    body.className = "dark-mode";
-    icon.className = "fas fa-sun sun-icon";
+    body.classList.add("dark-mode");
+    darkModeToggle.innerHTML = "☀️";
   }
-};
+}
+
+document.getElementById("hamburger").addEventListener("click", toggleMenu);
+document.getElementById("dark-mode-toggle").addEventListener("click", toggleDarkMode);
