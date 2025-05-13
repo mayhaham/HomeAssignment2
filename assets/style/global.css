@@ -132,7 +132,6 @@ body.dark-mode .navbar {
 
 body.dark-mode .logo,
 body.dark-mode .nav-links a {
-  background-color: transparent;
   color: var(--primary-color);
 }
 
