@@ -3,7 +3,10 @@
 .calculator-wrapper {
   max-width: 1100px;
   margin: 48px auto;
-  padding: 0 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 16px;
+padding-right: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -33,10 +36,9 @@ form input[type="number"] {
   padding: 10px;
   font-size: 16px;
   margin-top: 6px;
-  border: 1px solid #ccc;
+  border: 3px solid var(--main-color);
   border-radius: 6px;
   background-color: var(--card-bg);
-
 }
 
 .checkbox-container {
@@ -58,7 +60,7 @@ form input[type="number"] {
   border: none;
   border-radius: 6px;
   background-color: var(--main-color);
-  color: white;
+  color: var(--card-bg);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -79,7 +81,7 @@ form input[type="number"] {
 
 .result-box .thank-you {
   margin-top: 16px;
-  color: green;
+  color: rgb(56, 226, 224);
 }
 
 .price {

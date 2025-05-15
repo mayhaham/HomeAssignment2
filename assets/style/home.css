@@ -32,7 +32,7 @@
 }
 
 .hero-text h1 {
-  font-size: 36px;
+  font-size: 40px;
   color: var(--main-color);
   margin: 8px 0;
 }
@@ -55,7 +55,7 @@
 
 .btn:hover {
   background-color: var(--main-color);
-  color: #ffffff;
+  color: var(--footer-text);
 }
 
 .info-section {
@@ -104,7 +104,7 @@
   width: 100%;
   border-radius: 12px;
   margin-bottom: 8px;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .project-item img:hover {

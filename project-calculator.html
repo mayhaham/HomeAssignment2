@@ -20,15 +20,13 @@
         <li><a href="skills.html">Skills</a></li>
         <li><a href="project-calculator.html" class="active">Project Calculator</a></li>
       </ul>
-      <button id="dark-mode-toggle" aria-label="Toggle dark mode">
-        <i class="fas fa-moon moon-icon"></i>
-      </button>
+      <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
     </nav>
   </header>
 
   <main class="calculator-wrapper">
     <section class="calculator-card">
-      <h2>Project Quote Calculator</h2>
+      <h2>Project Calculator</h2>
       <p>Quickly estimate your website's cost based on its type, number of pages, and whether it includes a custom design.</p>
       <form id="quote-form">
         <label for="site-type">Site Type:</label>
@@ -43,7 +41,6 @@
         <input type="number" id="num-pages" min="1" max="10" value="1" required />
         <div class="checkbox-container">
           <input type="checkbox" id="custom-design" />
-
           <label for="custom-design">Custom Design</label>
         </div>
         <div class="buttons">
@@ -65,5 +62,6 @@
 
   <script src="services/global.js"></script>
   <script src="services/calculator.js"></script>
+  
 </body>
 </html>

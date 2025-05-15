@@ -49,7 +49,7 @@ function calculatePrice() {
     "<li>Custom Design: " + customText + "</li>" +
     "<li>Total Price: ₪" + total + "</li>" +
     "</ul>" +
-    "<p class='thank-you'>Thank you for using our quote calculator!</p>";
+    "<p class='thank-you'>Thank you for using my calculator :) </p>";
 
   return false;
 }
