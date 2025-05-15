@@ -6,7 +6,7 @@
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 16px;
-padding-right: 16px;
+  padding-right: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -81,7 +81,7 @@ form input[type="number"] {
 
 .result-box .thank-you {
   margin-top: 16px;
-  color: rgb(56, 226, 224);
+  color: rgb(19, 8, 238);
 }
 
 .price {

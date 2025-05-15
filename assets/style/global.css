@@ -6,6 +6,16 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: var(--subheading-color);
 }
 
 .shared-bar {
@@ -59,7 +69,7 @@ body {
 .nav-links a:hover,
 .nav-links a.active {
   background-color: var(--main-color-dark);
-  color: var(--footer-text);
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -81,11 +91,6 @@ body {
   line-height: 1;
 }
 
-#dark-mode-toggle i {
-  font-size: 22px;
-  transition: color 0.3s;
-}
-
 .sun-icon {
   color: var(--sun-color);
 }
@@ -95,7 +100,7 @@ body {
 }
 
 .resume-link {
-  margin: 40px;
+  margin: 40px auto;
   text-align: center;
   font-size: 18px;
 }
@@ -112,13 +117,6 @@ body {
   color: var(--main-color-dark);
 }
 
-h1, h2, h3 {
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 24px;
-  color: var(--subheading-color);
-}
-
 body.dark-mode {
   background-color: var(--dark-bg);
   color: var(--dark-text);
@@ -130,17 +128,7 @@ body.dark-mode .navbar {
 }
 
 body.dark-mode .logo,
-body.dark-mode .nav-links a {
-  color: var(--primary-color);
-}
-
-body.dark-mode .nav-links a:hover,
-body.dark-mode .nav-links a.active {
-  background-color: var(--main-color);
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
+body.dark-mode .nav-links a,
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
@@ -150,19 +138,15 @@ body.dark-mode a {
   background-color: transparent;
 }
 
-body.dark-mode .btn {
-  color: var(--dark-text);
-  border-color: var(--dark-text);
+body.dark-mode .nav-links a:hover,
+body.dark-mode .nav-links a.active {
+  background-color: var(--main-color);
+  color: var(--primary-color);
+  font-weight: bold;
 }
-
-body.dark-mode .btn:hover {
-  background-color: var(--footer-text);
-  color: var(--main-color);
-}
-
 
 body.dark-mode .resume-link a {
-  color: var(--dark-text);
+  color: var(--primary-color);
 }
 
 @media only screen and (max-width: 767px) {
@@ -204,18 +188,52 @@ body.dark-mode .resume-link a {
   .nav-links a {
     width: 100%;
   }
+
+  body {
+    font-size: 17px;
+  }
 }
 
-@media only screen and (min-width: 768px) {
-  .nav-links {
-    display: flex;
-    position: static;
-    flex-direction: row;
-    align-items: center;
-    background-color: transparent;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    padding: 0 20px;
+    font-size: 18px;
   }
 
-  .hamburger {
-    display: none;
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    gap: 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar {
+    padding: 0 30px;
+    font-size: 19px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    padding: 0 40px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    gap: 60px;
   }
 }
